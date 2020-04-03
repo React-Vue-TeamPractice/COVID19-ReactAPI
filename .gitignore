@@ -111,10 +111,4 @@ dist
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
-package-lock.json
-package.json
-public/
-src/App.js
-src/index.js
-src/serviceWorker.js
-src/setupTests.js
+
