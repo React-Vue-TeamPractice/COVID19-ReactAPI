@@ -1,2 +1,2 @@
 
-export const API_URL = 'import \'./index.css\';\n';
+export const API_URL = 'https://pomber.github.io/covid19/timeseries.json';
