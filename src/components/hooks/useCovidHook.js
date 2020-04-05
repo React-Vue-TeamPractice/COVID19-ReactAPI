@@ -4,25 +4,14 @@ import Axios from 'axios'
 //import config
 import { API_URL } from '../config/index'
 
-export const CovidHook = () => {
-    
-    const [date, setDate] = useState({})
+export const CovidHook = async () => {
 
-    useEffect(() => {
-        Axios.get(API_URL)
-        .then(res => {
-            const country = res.data
-            console.log(res)
-            setDate(country)
-        })
-    }, [])
+    try {
+        const { data: { Ukraine } } = await Axios.get(API_URL)
+
+        return { Ukraine }
+    } catch(e) {
+        console.error('Error from useHook: ', e)
+    }
         
-        console.log('Date Array: ',date)
-
-    return (
-        <>
-            Date 
-        </>
-    )
-
 }
