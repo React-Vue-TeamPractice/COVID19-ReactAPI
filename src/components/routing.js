@@ -7,7 +7,7 @@ import {
 //import components
 import App from "../App";
 
-export default() => {
+export default () => {
     return(
         <Switch>
             <Route path='/' components={App}/>

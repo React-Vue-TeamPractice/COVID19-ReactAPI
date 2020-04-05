@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 
-
 //import config
 import { API_URL } from '../config/index'
 
