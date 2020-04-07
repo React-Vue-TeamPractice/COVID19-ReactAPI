@@ -7,9 +7,9 @@ import { API_URL } from '../config/index'
 export const CovidHook = async () => {
 
     try {
-        const { data: { Ukraine } } = await Axios.get(API_URL)
+        const { data } = await Axios.get(API_URL)
 
-        return { Ukraine }
+        return data
     } catch(e) {
         console.error('Error from useHook: ', e)
     }
