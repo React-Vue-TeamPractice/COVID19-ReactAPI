@@ -19,16 +19,17 @@ class App extends React.Component  {
     console.log(fetchData)
   }
 
-  render () {
-    const { data } = this.state
-
-   return (
-      <div className='container'>
-      COVID-19
-      <Cards data={data}/>
-      <CountryPicker />
-      <Chart />
-  </div>
+    render () {
+      const { data } = this.state
+        return (
+          <div className='container'>
+              COVID-19
+              <Cards
+                  data={data}
+              />
+              <CountryPicker />
+              <Chart />
+         </div>
    )
   }
 }
