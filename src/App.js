@@ -30,8 +30,8 @@ class App extends React.Component  {
               <CountryPicker />
               <Chart />
          </div>
-   )
-  }
+      )
+    }
 }
 
 export default App;

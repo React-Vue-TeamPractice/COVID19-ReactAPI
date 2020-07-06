@@ -8,8 +8,8 @@ export const CovidHook = async () => {
     try {
         const  { data: { Ukraine } }  = await Axios.get(API_URL)
         return Ukraine
-    } catch(e) {
-        console.error('Error from useHook: ', e)
+    } catch(err) {
+        console.error('Error from useHook: ', err)
     }
 }
 
@@ -18,7 +18,7 @@ export const fetchDailyData = async () => {
         const { data } = await Axios.get(`${API_URL}/daily`)
 
         return data.map(({ confirmed, deaths, reportDate: date }) => ({confirmed: confirmed}))
-    } catch (e) {
-        console.error(e)
+    } catch (err) {
+        console.error(err)
     }
 }
